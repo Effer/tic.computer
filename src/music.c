@@ -1604,6 +1604,7 @@ static void onStudioEvent(Music* music, StudioEvent event)
 	case TIC_TOOLBAR_PASTE: copyFromClipboard(music); break;
 	case TIC_TOOLBAR_UNDO: undo(music); break;
 	case TIC_TOOLBAR_REDO: redo(music); break;
+	case TIC_TOOLBAR_RUN: runProject(); break;
 	default: break;
 	}
 }

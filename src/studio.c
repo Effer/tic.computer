@@ -405,7 +405,7 @@ static const EditorMode Modes[] =
 
 void drawExtrabar(tic_mem* tic)
 {
-	enum {Size = 7};
+	enum {Size = 6};
 
 	s32 x = (COUNT_OF(Modes) + 1) * Size + 17 * TIC_FONT_WIDTH;
 	s32 y = 0;
@@ -1363,7 +1363,7 @@ static void onFullscreen()
 	SDL_SetWindowFullscreen(studio.window, studio.fullscreen ? SDL_WINDOW_FULLSCREEN_DESKTOP : 0);	
 }
 
-static void runProject()
+void runProject()
 {
 	studio.tic->api.reset(studio.tic);
 

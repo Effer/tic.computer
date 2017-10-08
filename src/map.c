@@ -1123,6 +1123,7 @@ static void onStudioEvent(Map* map, StudioEvent event)
 	case TIC_TOOLBAR_PASTE: copyFromClipboard(map); break;
 	case TIC_TOOLBAR_UNDO: undo(map); break;
 	case TIC_TOOLBAR_REDO: redo(map); break;
+	case TIC_TOOLBAR_RUN: runProject(); break;
 	default: break;
 	}
 }

@@ -1008,6 +1008,7 @@ static void onStudioEnvelopeEvent(Sfx* sfx, StudioEvent event)
 	case TIC_TOOLBAR_PASTE: copyFromClipboard(sfx); break;
 	case TIC_TOOLBAR_UNDO: undo(sfx); break;
 	case TIC_TOOLBAR_REDO: redo(sfx); break;
+	case TIC_TOOLBAR_RUN: runProject(); break;
 	default: break;
 	}
 }
@@ -1021,6 +1022,7 @@ static void onStudioWaveformEvent(Sfx* sfx, StudioEvent event)
 	case TIC_TOOLBAR_PASTE: copyWaveFromClipboard(sfx); break;
 	case TIC_TOOLBAR_UNDO: undoWave(sfx); break;
 	case TIC_TOOLBAR_REDO: redoWave(sfx); break;
+	case TIC_TOOLBAR_RUN: runProject(); break;
 	default: break;
 	}
 }
